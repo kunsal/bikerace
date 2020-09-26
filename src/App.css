@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto+Condensed:wght@700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -34,5 +36,77 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+.nav-transparent {
+  background: transparent !important;
+  min-height: 150px;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 22px;
+}
+
+.jumbotron {
+  position: relative;
+  top: -150px;
+  z-index: -1;
+  background: #cccccc;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('https://images.pexels.com/photos/618612/pexels-photo-618612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  border-radius: 0;
+  font-family: "Roboto Condensed";
+}
+
+.jumbotron h1 {
+  font-size: 100px;
+  letter-spacing: 10px;
+  font-weight: 700;
+  color: #E31E25;
+}
+
+.jumbotron p {
+  font-size: 30px;
+  letter-spacing: 7px;
+  font-weight: 400px;
+  color: #fff;
+}
+
+/* Mobile devices */
+
+@media screen and (max-width: 420px) {
+  .nav-transparent {
+    min-height: 90px;
+  }
+
+  .navbar-brand {
+    font-size: 30px; 
+  }
+
+  .jumbotron {
+    padding-top: 100px; 
+    min-height: 500px !important;  
+    /* background-image: url('https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') !important; */
+    background-size: cover;
+    background-position: center bottom !important;
+  }
+
+  .jumbotron h1 {
+    font-size: 30px;
+  }
+
+  .jumbotron p {
+    font-size: 18px;
   }
 }

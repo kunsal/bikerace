@@ -1,32 +1,30 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link } from 'react-router-dom';
+import { navigationLinks } from "./constants/navigation-links";
+import createHistory from 'history/createBrowserHistory';
+
+const history = createHistory();
 
 const AppNavbar = ({ containerized }) => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="nav-transparent nav-tall">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top" className="nav-transparent nav-tall">
       { containerized ? <Container>{navContent()}</Container> : navContent() }
     </Navbar>
   );
 };
 
 const navContent = () => {
+  const pages = navigationLinks.filter(nav => nav.useInNavbar === true);
   return (
   <React.Fragment>
-    <Navbar.Brand href="#home">Boulder Bike Tour</Navbar.Brand>
+    <Link to="/" className="navbar-brand"><span className="text-danger">Boulder</span>BikeTour</Link>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="ml-auto">
-        <Nav.Link href="#deets">More deets</Nav.Link>
-        <Nav.Link eventKey={2} href="#memes">Dank memes</Nav.Link>
-        <Nav.Link href="#features">Features</Nav.Link>
-        <Nav.Link href="#pricing">Pricing</Nav.Link>
-        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-        </NavDropdown>
+        {
+          pages.map(page => <Link className="nav-link" to={page.link} key={page.link}>{page.title}</Link>)
+        }
       </Nav>
     </Navbar.Collapse>
   </React.Fragment>

@@ -1,32 +1,23 @@
 import React, { Component } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { Button, Jumbotron, Container, ButtonGroup } from "react-bootstrap";
 import AppNavbar from "./common/AppNavbar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { navigationLinks } from './common/constants/navigation-links';
 
 class App extends Component {
   render() {
-    
     return (
-      <React.Fragment>
-        <AppNavbar containerized/>
-        <Jumbotron>
-          <Container>
-            <p>12 June / Virgin, Utah</p>
-            <h1>Hello World</h1>
-            <p>This is my message to you uh ho!</p>
-            <ButtonGroup>
-              <Button variant="primary" size="lg">Learn More</Button>
-              <Button variant="secondary" size="lg">Follow Us</Button>
-            </ButtonGroup>
-            
-          </Container>
-          
-        </Jumbotron>
-      </React.Fragment>
+      <Router>
+        <AppNavbar containerized />
+        <Switch>
+          {navigationLinks.map(page => (
+            <Route path={page.link} component={page.component} key={page.link} exact={page.exact} />
+          ))};
+        </Switch>
+      </Router>
     );
   }
 }
 
 export default App;
-

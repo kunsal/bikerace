@@ -5,7 +5,8 @@ class CountdownTimer extends Component {
     days: '00',
     hours: '00',
     minutes: '00',
-    seconds: '00'
+    seconds: '00',
+    timeUp: false
   }
 
   componentDidMount() {
@@ -13,8 +14,8 @@ class CountdownTimer extends Component {
       let date = +new Date(this.props.date)
       let difference = date - +new Date();
 
-      if (date < new Date()) {
-        this.setState({ timer: 0 });
+      if (difference < 1) {
+        this.setState({ timeUp: true });
       } else {
         let days = Math.floor(difference / (1000 * 60 * 60 * 24));
         let hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
@@ -31,9 +32,13 @@ class CountdownTimer extends Component {
   }
 
   render() {
-    const {days, hours, minutes, seconds} = this.state;
-    return ( 
-      <p>{ days } : { hours } : { minutes } : { seconds }</p>
+    const {days, hours, minutes, seconds, timeUp} = this.state;
+    const dayString = days > 1 ? 'days' : 'day';
+    return (
+       timeUp ? 
+        <p>Event in progress</p>
+        : 
+        <p>{ `${days} ${dayString} ${hours} hours ${minutes} minutes ${seconds} seconds` }</p>
     );
   }
 }

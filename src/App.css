@@ -63,7 +63,7 @@
   position: relative;
   top: -150px;
   margin-bottom: -150px;
-  /* z-index: -1; */
+  z-index: -1;
   background: #cccccc;
   min-height: 800px;
   display: flex;
@@ -76,7 +76,6 @@
 
 .jumbotron h1 {
   font-size: 100px;
-  letter-spacing: 10px;
   font-weight: 700;
   color: #E31E25;
 }
@@ -93,12 +92,20 @@
   background-position: top left !important;
 }
 
-.content {
-  margin: 100px 0;
+.spacer {
+  padding: 0 10px;
+}
+
+.content-top {
+  margin-top: 100px;
+}
+
+.content-body {
+  margin-bottom: 100px;
 }
 
 .content-title {
-  color: #343a40;
+  color: #656769;
   letter-spacing: 3px;
   font-weight: 700;
   font-size: 40px;
@@ -118,27 +125,55 @@
 
 .content-text {
   font-size: 25px;
-  color: #343a40;
+  color: #8e8c8c;;
   text-align: justify;
 }
 
 .countdown {
-  min-height: 200px;
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  font-size: 50px;
-  letter-spacing: 3px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-weight: bold;
+  min-height: 120px;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
+
+.event-schedule {
+  padding: 10px;
+}
+
+.event-schedule h3 {
+  color: #e6222a;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.event-schedule .time {
+  color: #8e8c8c;
+  letter-spacing: 0px;
+}
+
+.event-schedule p {
+  color: #a09f9f;
+  font-size: 16px;
+}
+
 /* Mobile devices */
 
 @media screen and (max-width: 420px) {
   .nav-transparent {
     min-height: 90px;
+  }
+
+  .nav-link {
+    font-size: 12px;
   }
 
   .navbar-brand {
@@ -154,10 +189,45 @@
   }
 
   .jumbotron h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .jumbotron p {
-    font-size: 18px;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .countdown {
+    min-height: 70px;
+  }
+
+  .content-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .content-title::after {
+    height: 5px;
+    bottom: -10px;
+  }
+  
+  .content-text {
+    font-size: 14px;
+  }
+
+  .content-top {
+    margin-top: 50px;
+  }
+  
+  .content-body {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .btn-lg {
+    width: 200px;
+    height: 70px;
+    cursor: pointer;
   }
 }

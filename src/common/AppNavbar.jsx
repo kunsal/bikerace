@@ -8,7 +8,7 @@ const history = createHistory();
 
 const AppNavbar = ({ containerized }) => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top" className="nav-transparent nav-tall">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="nav-transparent nav-tall">
       { containerized ? <Container>{navContent()}</Container> : navContent() }
     </Navbar>
   );

@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import PageJumbotron from '../common/PageJumbotron';
 
-class About extends Component {
+class Contribution extends Component {
   state = {  }
+
   render() { 
     return ( 
-      <PageJumbotron title="About Tour" />
-     );
+      <PageJumbotron title="Give us a Slogan" />
+    );
   }
 }
  
-export default About;
+export default Contribution;

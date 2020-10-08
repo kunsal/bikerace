@@ -1,7 +1,18 @@
+import schedules from './data/schedule.json';
+import bikers from './data/bikers.json';
 class CmsService {
   getSchedule() {
-    return [
-      {time: '8:00', segment: 'Warm-up', description: ''},
-    ];
+    return schedules;
+  }
+
+  getBikers() {
+    return bikers;
+  }
+
+  getBiker(id) {
+    const biker = bikers.find(biker => biker.id == id);
+    return biker;
   }
 }
+
+export default new CmsService();

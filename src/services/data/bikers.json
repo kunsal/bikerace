@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "firstName": "Dustin",
+    "lastName": "Green",
+    "city": "Hickory Hills",
+    "state": "IL",
+    "location": "lat: 40.00, lng: -105.35"
+  },
+  {
+    "id": 2,
+    "firstName": "Jason",
+    "lastName": "Finn",
+    "city": "Huntington Beach",
+    "state": "CA",
+    "location": "lat: 39.95, lng: -105.24"
+  },
+  {
+    "id": 3,
+    "firstName": "Howard",
+    "lastName": "Thompson",
+    "city": "Hale",
+    "state": "MO",
+    "location": "lat: 40.06, lng: -105.26"
+  },
+  {
+    "id": 4,
+    "firstName": "Maggie",
+    "lastName": "Lantz",
+    "city": "Dublin",
+    "state": "OH",
+    "location": "lat: 40.03, lng: -105.23"
+  },
+  {
+    "id": 5,
+    "firstName": "Lawrence",
+    "lastName": "Duran",
+    "city": "Fort Myers",
+    "state": "FL",
+    "location": "lat: 40.04, lng: -105.23"
+  },
+  {
+    "id": 6,
+    "firstName": "Irene",
+    "lastName": "Molina",
+    "city": "Tucson",
+    "state": "AZ",
+    "location": "lat: 39.96, lng: -105.22"
+  },
+  {
+    "id": 7,
+    "firstName": "Nancy",
+    "lastName": "Garner",
+    "city": "Baltimore",
+    "state": "MD",
+    "location": "lat: 39.98, lng: -105.21"
+  },
+  {
+    "id": 8,
+    "firstName": "Tara",
+    "lastName": "Taylor",
+    "city": "Minneapolis",
+    "state": "MN",
+    "location": "lat: 40.00, lng: -105.25"
+  },
+  {
+    "id": 9,
+    "firstName": "Alejandro",
+    "lastName": "Smith",
+    "city": "Scarborough",
+    "state": "ME",
+    "location": "lat: 40.02, lng: -105.26"
+  },
+  {
+    "id": 10,
+    "firstName": "Tricia",
+    "lastName": "Renshaw",
+    "city": "Mystic",
+    "state": "CT",
+    "location": "lat: 40.02, lng: -105.30"
+  },
+  {
+    "id": 11,
+    "firstName": "Travis",
+    "lastName": "Cook",
+    "city": "Twin Lakes",
+    "state": "WI",
+    "location": "lat: 40.01, lng: -105.20"
+  },
+  {
+    "id": 12,
+    "firstName": "Joan",
+    "lastName": "Brooks",
+    "city": "Norfolk",
+    "state": "VA",
+    "location": "lat: 39.98, lng: -105.24"
+  },
+  {
+    "id": 13,
+    "firstName": "Joseph",
+    "lastName": "Rodgers",
+    "city": "Wayne",
+    "state": "NJ",
+    "location": "lat: 39.99, lng: -105.25"
+  },
+  {
+    "id": 14,
+    "firstName": "Matthew",
+    "lastName": "Gregson",
+    "city": "Brashear",
+    "state": "MO",
+    "location": "lat: 40.01, lng: -105.29"
+  },
+  {
+    "id": 15,
+    "firstName": "Katie",
+    "lastName": "Dunlap",
+    "city": "Marion",
+    "state": "VA",
+    "location": "lat: 39.97, lng: -105.27"
+  },
+  {
+    "id": 16,
+    "firstName": "Leo",
+    "lastName": "Howard",
+    "city": "Dallas",
+    "state": "TX",
+    "location": "lat: 39.97, lng: -105.33"
+  },
+  {
+    "id": 17,
+    "firstName": "Maria",
+    "lastName": "Baisden",
+    "city": "Raleigh",
+    "state": "NC",
+    "location": "lat: 40.00, lng: -105.29"
+  },
+  {
+    "id": 18,
+    "firstName": "Sandy",
+    "lastName": "Townsend",
+    "city": "Newport",
+    "state": "PA",
+    "location": "lat: 40.05, lng: -105.30"
+  },
+  {
+    "id": 19,
+    "firstName": "Melinda",
+    "lastName": "Stephenson",
+    "city": "Kahului",
+    "state": "HI",
+    "location": "lat: 39.99, lng: -105.31"
+  },
+  {
+    "id": 20,
+    "firstName": "Jason",
+    "lastName": "Nichols",
+    "city": "Alexandria",
+    "state": "VA",
+    "location": "lat: 40.01, lng: -105.32"
+  }
+]

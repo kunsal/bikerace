@@ -10,10 +10,21 @@ import {
   Image
 } from "react-bootstrap";
 import CountdownTimer from "../common/Countdown";
+import cmsService from "../services/cms-service";
 class Home extends Component {
-  state = {};
+  state = {
+    schedules: [],
+  };
+
+  async componentDidMount() {
+    const schedules = await cmsService.getSchedule();
+    if (schedules.length > 0) {
+      this.setState({ schedules });
+    }
+  }
 
   render() {
+    const { schedules } = this.state;
     return (
       <div>
         <Jumbotron>
@@ -86,48 +97,17 @@ class Home extends Component {
               />
             </Col>
             <Col md={8} sm={6}>
-              <div className="event-schedule">
+              { schedules.map(schedule => (
+                <div className="event-schedule">
                 <h3>
-                  <span className="time">8:00 am</span> Warm-up
+                  <span className="time">{ schedule.time } am</span> { schedule.segment }
                 </h3>
                 <p>
-                  Participants do not run a marathon to win. More important for
-                  most runners is their personal finish time and their placement
-                  within their gender and age.
+                  { schedule.description }
                 </p>
               </div>
-
-              <div className="event-schedule">
-                <h3>
-                  <span className="time">8:30 am</span> Start
-                </h3>
-                <p>
-                  Strategies for completing a marathon include running the whole
-                  distance and a run-walk strategy. Average time is 4 hours 32
-                  minutes.
-                </p>
-              </div>
-
-              <div className="event-schedule">
-                <h3>
-                  <span className="time">12:00 pm</span> Finish
-                </h3>
-                <p>
-                  A goal many runners aim for is to break certain time barriers.
-                  For example, first-timers often try to run the marathon under
-                  4 hours.
-                </p>
-              </div>
-
-              <div className="event-schedule">
-                <h3>
-                  <span className="time">1:00 pm</span> Prize Presentaion
-                </h3>
-                <p>
-                  The winners will be presented with Prizes as per Gold, Silver
-                  and Bronze
-                </p>
-              </div>
+              )) }
+              
             </Col>
           </Row>
         </Container>

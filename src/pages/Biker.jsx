@@ -40,10 +40,7 @@ class Biker extends Component {
         <Container>
           {biker ? (
             <React.Fragment>
-              <Row className="content-top">
-                
-              </Row>
-              <Row className="content-body">
+              <Row className="content-top content-body">
                 <Col md={4} sm={6}>
                   
                   <h3 className="content-title">{biker.firsName} {biker.lastName}</h3>

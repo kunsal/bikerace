@@ -75,8 +75,8 @@
 }
 
 .jumbotron h1 {
-  font-size: 100px;
-  font-weight: 700;
+  font-size: 60px;
+  font-weight: 400;
   color: #E31E25;
 }
 
@@ -235,4 +235,10 @@
     height: 70px;
     cursor: pointer;
   }
+}
+
+btn-primary {
+  color: #fff;
+  background-color: #e31e25 !important;
+  border-color: #e31e25 !important;
 }

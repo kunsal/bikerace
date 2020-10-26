@@ -21,6 +21,7 @@ const BikersMap = compose(
       { coordinates.map(({lat, lng}, idx) => 
       <Marker 
         position={{ lat, lng }} 
+        icon={{ url: 'https://img.icons8.com/material-sharp/2x/bike-path.png' }}
         key={idx}
       />)}
       

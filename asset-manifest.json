@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bikerace/static/css/main.6ddd395e.chunk.css",
-    "main.js": "/bikerace/static/js/main.beb46d98.chunk.js",
-    "main.js.map": "/bikerace/static/js/main.beb46d98.chunk.js.map",
+    "main.js": "/bikerace/static/js/main.868f2045.chunk.js",
+    "main.js.map": "/bikerace/static/js/main.868f2045.chunk.js.map",
     "runtime-main.js": "/bikerace/static/js/runtime-main.6c781a3f.js",
     "runtime-main.js.map": "/bikerace/static/js/runtime-main.6c781a3f.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/bikerace/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.d5569dc8.chunk.js": "/bikerace/static/js/2.d5569dc8.chunk.js",
     "static/js/2.d5569dc8.chunk.js.map": "/bikerace/static/js/2.d5569dc8.chunk.js.map",
     "index.html": "/bikerace/index.html",
-    "precache-manifest.6d4efe70681af716cfec0487252f1bb0.js": "/bikerace/precache-manifest.6d4efe70681af716cfec0487252f1bb0.js",
+    "precache-manifest.855759312705a356ca5895e0c9a48159.js": "/bikerace/precache-manifest.855759312705a356ca5895e0c9a48159.js",
     "service-worker.js": "/bikerace/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/bikerace/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.6ddd395e.chunk.css.map": "/bikerace/static/css/main.6ddd395e.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.d5569dc8.chunk.js",
     "static/css/main.6ddd395e.chunk.css",
-    "static/js/main.beb46d98.chunk.js"
+    "static/js/main.868f2045.chunk.js"
   ]
 }

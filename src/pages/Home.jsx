@@ -35,7 +35,7 @@ class Home extends Component {
 
             <ButtonGroup>
               <Button variant="primary" size="lg">
-                Register
+                Register Now
               </Button>
               <span className="spacer"></span>
               <Button variant="secondary" size="lg">
@@ -46,7 +46,7 @@ class Home extends Component {
           <Container fluid className="countdown">
             <Row>
               <Col>
-                <CountdownTimer date="01/02/2020" />
+                <CountdownTimer date="01/02/2021" />
               </Col>
             </Row>
           </Container>

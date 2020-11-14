@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/bikerace/static/css/main.6ddd395e.chunk.css",
+    "main.js": "/bikerace/static/js/main.33c08206.chunk.js",
+    "main.js.map": "/bikerace/static/js/main.33c08206.chunk.js.map",
+    "runtime-main.js": "/bikerace/static/js/runtime-main.6c781a3f.js",
+    "runtime-main.js.map": "/bikerace/static/js/runtime-main.6c781a3f.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/bikerace/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.2bcd2b9f.chunk.js": "/bikerace/static/js/2.2bcd2b9f.chunk.js",
+    "static/js/2.2bcd2b9f.chunk.js.map": "/bikerace/static/js/2.2bcd2b9f.chunk.js.map",
+    "index.html": "/bikerace/index.html",
+    "precache-manifest.f17e820b8e230ffa3f8ea087ef413a0c.js": "/bikerace/precache-manifest.f17e820b8e230ffa3f8ea087ef413a0c.js",
+    "service-worker.js": "/bikerace/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/bikerace/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.6ddd395e.chunk.css.map": "/bikerace/static/css/main.6ddd395e.chunk.css.map",
+    "static/js/2.2bcd2b9f.chunk.js.LICENSE.txt": "/bikerace/static/js/2.2bcd2b9f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c781a3f.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.2bcd2b9f.chunk.js",
+    "static/css/main.6ddd395e.chunk.css",
+    "static/js/main.33c08206.chunk.js"
+  ]
+}

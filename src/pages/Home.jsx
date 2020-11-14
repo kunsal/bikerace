@@ -46,7 +46,7 @@ class Home extends Component {
           <Container fluid className="countdown">
             <Row>
               <Col>
-                <CountdownTimer date="11/12/2020" />
+                <CountdownTimer date="01/02/2020" />
               </Col>
             </Row>
           </Container>

@@ -2,8 +2,7 @@ import schedules from './data/schedule.json';
 import bikers from './data/bikers.json';
 import axios from 'axios';
 
-// const url = 'http://127.0.0.1:3001';
-const url = 'https://kunsal-boulder-api.herokuapp.com';
+const url = process.env.REACT_APP_API_URL;
 class CmsService {
   getSchedule() {
     return schedules;

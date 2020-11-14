@@ -35,7 +35,7 @@ class Home extends Component {
 
             <ButtonGroup>
               <Button variant="primary" size="lg">
-                Register Now
+                Register Now!
               </Button>
               <span className="spacer"></span>
               <Button variant="secondary" size="lg">

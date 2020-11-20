@@ -31,7 +31,7 @@ class Photos extends Component {
         <Row className="content-top">
           {photos.length > 0 ? 
             photos.map(photo => (
-              <Col key={photo.id}>
+              <Col>
                 <Card style={{ width: '18rem', marginBottom: '10px' }}>
                   <Card.Img variant="top" src={`https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`} />
                   <Card.Body>

@@ -38,10 +38,9 @@ class CmsService {
       format=json&nojsoncallback=1&
       tags=bicycle,bikes,bikerace
       tag_mode=or`;
-      
+
     try {
-      const response = await axios.get(`${url}/photos?page=${page}&per_page=${per_page}`)
-      console.log(response)
+      const response = await axios.get(url)
       return response.data.photos
     } catch (error) {
       return error.response

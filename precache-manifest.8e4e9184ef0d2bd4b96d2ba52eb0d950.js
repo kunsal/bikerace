@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f2ef1703a67d464d8abe9384e06edfeb",
+    "revision": "a3d93cd4390bd28c5082b13717110c04",
     "url": "/bikerace/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bikerace/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "df9d192dbdd92e7b3a62",
+    "revision": "73d9244338a1ae6676ef",
     "url": "/bikerace/static/css/main.6ddd395e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bikerace/static/js/2.d5569dc8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "df9d192dbdd92e7b3a62",
-    "url": "/bikerace/static/js/main.2bb2b47a.chunk.js"
+    "revision": "73d9244338a1ae6676ef",
+    "url": "/bikerace/static/js/main.9af18757.chunk.js"
   },
   {
     "revision": "f6be73450d9610646e15",

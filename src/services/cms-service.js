@@ -3,6 +3,7 @@ import bikers from './data/bikers.json';
 import axios from 'axios';
 
 const url = process.env.REACT_APP_API_URL;
+const flickr_key = process.env.REACT_APP_FLICKR_KEY
 class CmsService {
   getSchedule() {
     return schedules;
@@ -28,15 +29,26 @@ class CmsService {
     }
   } 
 
-  async getPhotos(page, per_page) {
+  async getPhotos(page, per_page)
+  {
     try {
-      const response = await axios.get(`${url}/photos?page=${page}&per_page=${per_page}`)
-      console.log(response)
-      return response.data.photos
+      const response = await axios.get(`
+        https://www.flickr.com/services/rest?
+        method=flickr.photos.search&
+        api_key=${flickr_key}&
+        per_page=${per_page}&
+        page=${page}&
+        format=json&
+        nojsoncallback=1&
+        tags=bicycle,bikes,motorcyle,
+        tag_mode=and
+      `)
+      console.log(response);
+      return response.data.photos;
     } catch (error) {
-      return error.response
+      return error.response;
     }
-  } 
+  }
 }
 
 export default new CmsService();

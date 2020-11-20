@@ -30,11 +30,11 @@ class CmsService {
   } 
 
   async getPhotos(page, per_page) {
-    const url = `https://www.flickr.com/services/rest/?
-      method=flickr.photos.search&api_key=${flickr_key}&extras=&per_page=${per_page}&page=${page}&format=json&nojsoncallback=1&tags=bicycle,bikes,bikerace&tag_mode=or`;
+    const url = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${flickr_key}&extras=&per_page=${per_page}&page=${page}&format=json&nojsoncallback=1&tags=bike,bicycle&tag_mode=and`;
 
     try {
       const response = await axios.get(url)
+      console.log(response);
       return response.data.photos
     } catch (error) {
       return error.response
